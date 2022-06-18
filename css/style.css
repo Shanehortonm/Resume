@@ -12,6 +12,13 @@ body {
 }
 
 
+
+/*
+==========================================================
+        Top Nav
+==========================================================
+*/
+
 ul {
     margin: 0;
     padding: 0;
@@ -58,6 +65,44 @@ ul {
       border-radius: 5px;
   }
   
+
+/*
+===============================================================
+    Hero-Section
+===============================================================
+*/
+
+.hero-main {
+    display: flex;
+    border: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hero-main img {
+    height: 400px;
+    width: 300px;
+    border: 1px solid white;
+    border-radius: 30px;
+    box-shadow: 2px 5px 10px 5px white;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
   /* ================================= 
     Media Queries
