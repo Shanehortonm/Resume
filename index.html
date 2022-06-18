@@ -1,97 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Shane's Resume | Home
-    </title>
-</head>
-<body>
-    
-    
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Shane's Resume | Home</title>
+  </head>
+  <body>
     <!-- Start of Header -->
     <header>
+      <nav class="nav-wrapper">
+        <h1 class="logo"><a href="index.html">Shane M. Horton</a></h1>
 
-        <nav class="nav-wrapper">
-            <h1 class="logo"><a href="index.html">Shane M. Horton</a></h1>
-            
-            <ul class="main-nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-
+        <ul class="main-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#aboutme">About</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
     </header>
     <!-- End of Header -->
 
-
-
-
-
     <!-- Start of Main Content-->
     <main>
-        
-        
-        <section class="intro-container" id="intro">
-            <div class="intro-content">
-                
-                <div class="intro-content-inner">
-                    <h1>Hey There!</h1>
-                <p>Welcome to my resume page. My name is Shane, I am kind of new at this so please take a look around and see if you like anything!</p>
-                </div>
-            </div>
-       </section>
+      <section class="intro-container" id="intro">
+        <div class="intro-content">
+          <div class="intro-content-inner">
+            <h1>Hey There!</h1>
+            <p>
+              Welcome to my resume page. My name is Shane, I am kind of new at
+              this so please take a look around and see if you like anything!
+            </p>
+          </div>
+        </div>
+      </section>
 
+      <section class="aboutme-main">
+        <div class="aboutme-content">
+          <img src="img/20211125_161739_2.jpg" alt="Shane Horton" />
 
+          <div class="aboutme-text" id="aboutme">
+            <h2>About Me</h2>
 
-        <section class="about-main">
-            
-            <img src="img/20211125_161739_2.jpg" alt="Shane Horton">
-            
-            <div class="about-main-inner">
-                
-               <p>place holder</p>
-            
-            </div>    
-        
-        </section>
-    
-        
-        
-        
-        
-        <section>
+            <p>Text about me</p>
+          </div>
+        </div>
+      </section>
 
-        </section>
-    
-        
-        
-        
-        
-        <section>
+      <section></section>
 
-        </section>
-    
-    
-    
-
-
-
-
-
+      <section></section>
     </main>
+
+    <!-- Start of Contact Box-->
+
+    <section>
+      <div class="contact-section">
+        <h1>Connect with Me</h1>
+        <p>
+          I would love to to hear your feedback! Feel free to get in touch with
+          me.
+        </p>
+        <div class="contact-border"></div>
+        <form class="contact-form" action="index.html" method="post">
+          <input
+            type="text"
+            class="contact-form-text"
+            placeholder="Your Name..."
+          />
+          <input
+            type="email"
+            class="contact-form-text"
+            placeholder="Your Email..."
+          />
+          <input
+            type="text"
+            class="contact-form-text"
+            placeholder="Your Phone Number..."
+          />
+          <textarea
+            class="contact-form-text"
+            placeholder="Your Message..."
+          ></textarea>
+          <input type="submit" class="contact-form-btn" value="SEND" />
+        </form>
+      </div>
+    </section>
+
+    <!-- End of Contact Box-->
+
     <!-- End of Main Content-->
 
-
-
     <!-- Start of Footer-->
-    <h1>Footer</h1>
+    <footer class="footer-container">
+      <div class="footer-content">
+        <p>&copy; 2022 Resume page for Shane "Saucey" Horton</p>
+      </div>
+    </footer>
     <!-- End of Footer-->
-
-</body>
+  </body>
 </html>
