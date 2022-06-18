@@ -65,23 +65,63 @@ ul {
       border-radius: 5px;
   }
   
-
 /*
 ===============================================================
-    Hero-Section
+    .Intro
 ===============================================================
 */
 
-.hero-main {
-    display: flex;
-    border: 0;
+.intro-container {
+    display: block;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQioKsrFMdfQE_MnS5w6SOIrfprxDDQJUTTQw&usqp=CAU) center center no-repeat;
+    background-size: cover;
+    height: 80vh;
+    opacity: 0.7;
     padding: 0;
-    justify-content: center;
-    align-items: center;
-
+    margin: 0;
 }
 
-.hero-main img {
+.intro-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    margin: 0 auto;
+    height: 70vh;
+}
+
+.intro-content-inner h1 {
+    color: white;
+    font-size: 4rem;
+    font-style: bold;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+.intro-content-inner p {
+    color: white;
+    font-size: 2rem;
+}
+
+
+
+
+/*
+===============================================================
+    About-Me-Section
+===============================================================
+*/
+
+.about-main {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+    
+}
+
+.about-main img {
     height: 400px;
     width: 300px;
     border: 1px solid white;
