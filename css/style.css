@@ -82,6 +82,8 @@ ul {
     opacity: 0.7;
     padding: 0;
     margin: 0;
+   
+    box-shadow: 5px 10px #373e40;
 }
 
 .intro-content {
@@ -126,8 +128,14 @@ ul {
     justify-content: space-evenly;
 }
 
-.aboutme-content img {
+.my-picture {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem;
+}
+
+.my-picture img {
     height: 400px;
     width: 300px;
     border: 1px solid #488286;
@@ -135,7 +143,10 @@ ul {
     box-shadow: 2px 5px 15px 8px #488286;
 }
 
+/* Container for multi flex boxs*/
 .aboutme-text {
+    display: flex;
+    flex-wrap: wrap;
     max-width: 1000px;
     min-width: none;
     padding: 1rem;
@@ -149,6 +160,12 @@ ul {
         #488286, 
         rgba(0, 0, 0, 0)
       ) 1 100%;
+}
+
+/* Created 4 equal columns*/
+.column {
+    flex: 25%;
+    padding: 25px;
 }
 
 .aboutme-text h2 {
@@ -287,7 +304,7 @@ textarea.contact-form-text {
         flex-direction: column;
       }
       }
-  
+      
   }
   
   @media (min-width: 1025px) {
