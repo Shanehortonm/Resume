@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>Shane's Resume | Home</title>
   </head>
@@ -11,14 +17,21 @@
     <!-- Start of Header -->
     <header>
       <nav class="nav-wrapper">
-        <h1 class="logo"><a href="index.html">Shane M. Horton</a></h1>
+        <div class="logo">
+          <h1>Shane M Horton</h1>
+        </div>
 
         <ul class="main-nav">
           <li><a href="index.html">Home</a></li>
-          <li><a href="#aboutme">About</a></li>
+          <li><a href="#about-me">About</a></li>
           <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#contact-section">Contact</a></li>
         </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
       </nav>
     </header>
     <!-- End of Header -->
@@ -26,21 +39,15 @@
     <!-- Start of Main Content-->
     <main>
       <!-- Start of Intro -->
-      <section class="intro-container" id="intro">
-        <div class="intro-content">
-          <div class="intro-content-inner">
-            <h1>Hey There!</h1>
-            <p>
-              Welcome to my resume page. My name is Shane, I am kind of new at
-              this so please take a look around and see if you like anything!
-            </p>
-          </div>
-        </div>
+
+      <section class="intro-container">
+        <div class="intro-inner"></div>
       </section>
+
       <!-- End of Intro -->
 
       <!-- Start of About Me -->
-      <section class="aboutme-main">
+      <section class="aboutme-main" id="about-me">
         <div class="my-picture">
           <img src="img/20211125_161739_2.jpg" alt="Shane Horton" />
         </div>
@@ -80,7 +87,7 @@
     <!-- Start of Contact Box-->
 
     <section>
-      <div class="contact-section">
+      <div class="contact-section" id="contact-section">
         <h1>Connect with Me</h1>
         <p>
           I would love to to hear your feedback! Feel free to get in touch with
