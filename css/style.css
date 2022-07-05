@@ -279,10 +279,6 @@ textarea.contact-form-text {
   @media (min-width: 769px) {
     
 
-      .nav-wrapper,
-      .main-nav {
-          display: flex;
-      }
       }
       .aboutme-content, 
       .aboutme-text h2,
@@ -291,11 +287,6 @@ textarea.contact-form-text {
         flex-direction: column;
       }
 
-<<<<<<< HEAD
-      .loader {
-        display: hidden;
-      }
-=======
       .main-nav {
         position: absolute;
         right: 0px;
@@ -316,7 +307,6 @@ textarea.contact-form-text {
 
       .burger {
         display: block;
->>>>>>> refs/remotes/origin/main
       }
       
   }
