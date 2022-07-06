@@ -15,20 +15,32 @@
   </head>
   <body>
     <!-- Start of Header/Nav -->
-    <header>
-      <div class="logo-container">
-        <div class="spinner-logo"></div>
-      </div>
-
-      <nav class="top-nav">
-        <ul class="nav-list">
-          <li class="nav-item"><a href="#">Home</a></li>
-          <li class="nav-item"><a href="#">About Me</a></li>
-          <li class="nav-item"><a href="#">Portfolio</a></li>
-          <li class="nav-item"><a href="#">Contact Me</a></li>
-        </ul>
-      </nav>
-    </header>
+    <nav class="navbar">
+      <div class="logo">Shane M. Horton</div>
+      <ul class="nav-links">
+        <!-- hamburger menu -->
+        <input type="checkbox" id="checkbox-toggle" />
+        <label for="checkbox-toggle" class="hamburger">&#9776;</label>
+        <!-- Nav Menus-->
+        <div class="menu">
+          <li><a href="/">Home</a></li>
+          <li><a href="/">About Me</a></li>
+          <li><a href="/">Work Experience</a></li>
+          <li class="portfolio">
+            <a href="/">Portfolio</a>
+            <!-- Drop Down Menu-->
+            <ul class="dropdown">
+              <li><a href="/">Dropdown1</a></li>
+              <li><a href="/">Dropdown2</a></li>
+              <li><a href="/">Dropdown3</a></li>
+              <li><a href="/">Dropdown4</a></li>
+            </ul>
+          </li>
+          <li><a href="/">Contact Me</a></li>
+          <!-- REMEMBER TO MAKE THIS A BUTTON -->
+        </div>
+      </ul>
+    </nav>
     <!-- End of Header/Nav -->
 
     <!-- Start of Main Content-->
@@ -48,7 +60,7 @@
         </div>
         <div class="aboutme-content">
           <div class="aboutme-text">
-            <div class="column">
+            <div class="column" id="loader">
               <div class="loader"></div>
             </div>
 
@@ -62,7 +74,7 @@
               <p>Text about me</p>
             </div>
 
-            <div class="column">
+            <div class="column" id="loader">
               <div class="loader"></div>
             </div>
           </div>
