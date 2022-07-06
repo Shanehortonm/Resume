@@ -20,44 +20,37 @@ body {
         Top Header
 ==========================================================
 */
-#logo {
-    margin: 2rem;
-    height: 15vh;
-    width: 15vh;
-    border-radius: 45px;
+    
+.spinner-logo {
+    width: 50px;
+    aspect-ratio: 1;
+    display: grid;
+  }
+  .spinner-logo::before,
+  .spinner-logo::after {    
+    content:"";
+    grid-area: 1/1;
+    --c: radial-gradient(farthest-side,#25b09b 92%,#0000);
+    background: 
+      var(--c) 50%  0, 
+      var(--c) 50%  100%, 
+      var(--c) 100% 50%, 
+      var(--c) 0    50%;
+    background-size: 12px 12px;
+    background-repeat: no-repeat;
+    animation: s2 1s infinite;
+  }
+  .spinner-logo::before {
+    margin: 4px;
+    filter: hue-rotate(45deg);
+    background-size: 8px 8px;
+    animation-timing-function: linear
+  }
+  
+  @keyframes s2{ 
+    100%{transform: rotate(.5turn)}
+  }
 }
-
-.top-header {
-    align-items: center;
-    justify-content: space-between;
-}
-
-.top-nav {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.top-nav a {
-    text-decoration: none;
-}
-
-.top-nav a > [aria-hidden="true"] {
-    font-weight: 700;
-    margin-inline-end: 0.75em;
-}
-
-@media (max-width: 35em) {
-    .top-nav {
-        --gap: 2em;
-        position: fixed;
-        inset: 0 0 0 30%;
-        flex-direction: column;
-        padding: min(30vh, 10rem) 2em;
-        background: hsl(0, 0%, 0% / 0.5);
-    }
-}
-
 /*
 ==========================================================
         Top Nav
@@ -69,15 +62,6 @@ body {
     .Intro
 ===============================================================
 */
-
-.intro-container {
-    display: flex;
-    background-color: black;
-}
-
-.intro-inner {
-    background-color: red;
-}
 
 /*
 ===============================================================
@@ -269,13 +253,18 @@ textarea.contact-form-text {
     Media Queries
   ==================================== */
   
-  
+  @media (max-width: 480px) {
+    .column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+  }
   
   
   @media (min-width: 769px) {
     
-
-      }
       .aboutme-content, 
       .aboutme-text h2,
       .aboutme-text p {
@@ -283,28 +272,6 @@ textarea.contact-form-text {
         flex-direction: column;
       }
 
-      .main-nav {
-        position: absolute;
-        right: 0px;
-        height: 90vh;
-        top: 8vh;
-        background-color: #504954;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 40%;
-        transform: translateX(100%
-        );
-      }
-
-      .main-nav li {
-        opacity: 0;
-      }
-
-      .burger {
-        display: block;
-      }
-      
   }
   
   @media (min-width: 1025px) {
