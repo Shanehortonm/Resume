@@ -128,11 +128,25 @@ input[type=checkbox] {
 }
 
 .my-picture {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
     border: 1px solid red;
-    width: 100%;
-    display: inline-flex;
+    width: 70%;
     justify-content: space-between;
     align-items: center;
+    padding: 30px;
+    margin: 0;
+
+}
+
+.aboutme-intro {
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+  width: 100%;
+  word-wrap: nowrap;
+  grid-column: 3 / 5;
 }
 
 .my-picture img {
@@ -209,9 +223,9 @@ input[type=checkbox] {
     to   {transform: rotate(1turn)}
   }
 /*
-==========================================================================
+=======================================================
 Contact Form
-==========================================================================
+=======================================================
 */
 
 .contact-section {
@@ -338,26 +352,40 @@ textarea.contact-form-text {
 }
 
 
-  /* ================================= 
+/* 
+==========================================
     Media Queries
-  ==================================== */
+==========================================
+*/
   
 @media (max-width: 480px) {
-  .aboutme-main {
+    .aboutme-main {
       display: flex;
       flex-direction: column;
     }
 
-  #loader {
-    display: flex;
+    #loader {
+      display: flex;
       justify-content: center;
-  }
-
-    .aboutme-text {
-      flex-wrap: wrap;
     }
 
+    .aboutme-text {
+    flex-wrap: wrap;
+    }
 
+  .my-picture img {
+    width: 310px;
+    height: 400px;
+  }
+
+  .my-picture {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+  }
 }
 
 
@@ -400,6 +428,13 @@ textarea.contact-form-text {
     background-color: #4c9e9e;
   }
 
+  .my-picture {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
 
 }
 
@@ -410,4 +445,6 @@ textarea.contact-form-text {
       display: flex;
       flex-direction: column;
     }
+
+    
   }
