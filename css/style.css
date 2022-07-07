@@ -129,9 +129,8 @@ input[type=checkbox] {
 
 .my-picture {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    border: 1px solid red;
     width: 70%;
     justify-content: space-between;
     align-items: center;
@@ -140,13 +139,15 @@ input[type=checkbox] {
 
 }
 
-.aboutme-intro {
+.aboutme-intro { 
   display: flex;
   flex-direction: column;
-  white-space: nowrap;
+  flex-wrap: wrap;
   width: 100%;
+  padding: 10px 50px;
+  align-items: baseline;
   word-wrap: nowrap;
-  grid-column: 3 / 5;
+  grid-column: 2 / 2;
 }
 
 .my-picture img {
@@ -156,6 +157,37 @@ input[type=checkbox] {
     border-radius: 30px;
     box-shadow: 2px 5px 15px 8px #488286;
 }
+/* Animaton for aboutme-intro */
+
+.animate-text {
+  text-transform: uppercase;
+  background-image: linear-gradient(
+      -255deg,
+      #231557 0%,
+      #44107a 29%,
+      #ff1361 67%,
+      #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;          /* Wraps the color from gradient */
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: flex;
+  flex-wrap: nowrap;
+  font-size: 3rem;
+
+}
+
+@keyframes textclip {
+  to {
+      background-position: 200% center;
+  }
+}
+
 
 /* Container for multi flex boxs*/
 .aboutme-text {
@@ -183,6 +215,17 @@ input[type=checkbox] {
     padding: 25px;
 }
 
+#loader1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#loader2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .aboutme-text h2 {
     font-size: 3rem;
 }
@@ -222,6 +265,29 @@ input[type=checkbox] {
     from {transform: rotate(0turn)}
     to   {transform: rotate(1turn)}
   }
+
+
+/*
+=======================================================
+    Portfolio Section
+=======================================================
+*/
+
+.portfolio-container {
+  border: 1px solid red;
+  height: 50vh;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
 /*
 =======================================================
 Contact Form
@@ -386,6 +452,8 @@ textarea.contact-form-text {
     width: 100%;
 
   }
+
+
 }
 
 
@@ -436,6 +504,32 @@ textarea.contact-form-text {
     
   }
 
+  .aboutme-main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #loader {
+    display: flex;
+    justify-content: center;
+  }
+
+  .aboutme-text {
+  flex-wrap: wrap;
+  }
+
+  .my-picture {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .column {
+    justify-items: center;
+    align-items: center;
+  }
 }
 
 @media (min-width: 768px) {
@@ -446,5 +540,13 @@ textarea.contact-form-text {
       flex-direction: column;
     }
 
-    
+
   }
+
+@media (min-width: 800px) {
+  .aboutme-content {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
