@@ -189,7 +189,12 @@ input[type=checkbox] {
 }
 
 
-/* Container for multi flex boxs*/
+
+/* 
+==============================================
+    About Me loaders and Text container
+==============================================
+*/
 .aboutme-text {
     display: flex;
     flex-wrap: nowrap;
@@ -211,8 +216,11 @@ input[type=checkbox] {
 
 /* Created 4 equal columns*/
 .column {
-    flex: 25%;
-    padding: 25px;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  justify-content: center;
+  align-items: center;
 }
 
 #loader1 {
@@ -425,19 +433,23 @@ textarea.contact-form-text {
 */
   
 @media (max-width: 480px) {
-    .aboutme-main {
-      display: flex;
-      flex-direction: column;
-    }
 
-    #loader {
-      display: flex;
-      justify-content: center;
-    }
 
-    .aboutme-text {
+  .aboutme-main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #loader {
+    display: flex;
+    justify-content: center;
+  }
+
+  .aboutme-text {
+    display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    }
+  }
 
   .my-picture img {
     width: 310px;
@@ -453,6 +465,24 @@ textarea.contact-form-text {
 
   }
 
+  .aboutme-intro {
+    width: 100%;
+    align-items: flex-start;
+    padding: 0;
+  }
+
+  .animate-text {
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .column {
+    border: 1px solid red;
+    padding: 0;
+
+
+  }
 
 }
 
@@ -514,9 +544,7 @@ textarea.contact-form-text {
     justify-content: center;
   }
 
-  .aboutme-text {
-  flex-wrap: wrap;
-  }
+
 
   .my-picture {
     display: flex;
@@ -527,6 +555,8 @@ textarea.contact-form-text {
   }
 
   .column {
+    display: flex;
+    flex-direction: column;
     justify-items: center;
     align-items: center;
   }
