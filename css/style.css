@@ -296,17 +296,16 @@ input[type=checkbox] {
 
 .portfolio-container {
   margin: 0;
-	background-image: linear-gradient(90deg, #201A35, #0B0320);
 	color: #fff;
 	font-family: sans-serif;
 	display: flex;
 	align-items: center;
 	min-height: 100vh;
 }
-.portfolio-slider {
+.project-slider {
 	width: 100%;
 }
-.portfolio-slider input {
+.project-slider input {
 	display: none;
 }
 .projects {
@@ -325,6 +324,7 @@ input[type=checkbox] {
 	background-color: #0A0220;
 	padding: 30px;
 	width: 450px;
+  height: 320px;
 	text-align: center;
 	transition: transform 0.4s;
 	-webkit-transform-style: preserve-3d;
@@ -333,9 +333,9 @@ input[type=checkbox] {
 	cursor: pointer;
 }
 .projects .project-card img {
-	width: 100px;
+	width: 150px;
 	border-radius: 50%;
-	border: 13px solid #3B344D;
+	border: 2px solid #3B344D;
 }
 .projects .project-card p {
 	color: #ddd;
@@ -359,10 +359,16 @@ input[type=checkbox] {
 	transition: transform 0.2s, color 0.2s;
 }
 
+/*
+=======================================================================================
+    start project sliders
+=======================================================================================
+*/
+
 /* First */
 #pc-1:checked ~ .project-dots label[for="pc-1"] {
 	transform: scale(2);
-	background-color: #fff;
+	background-color: white;
 }
 #pc-1:checked ~ .project-dots label[for="pc-2"] {
 	transform: scale(1.5);
@@ -378,7 +384,7 @@ input[type=checkbox] {
 	transform: translateX(600px) translateZ(-180px) rotateY(-25deg);
 	z-index: 2;
 }
-#pc-1:checked ~ .projects label[for="lpc-4"] {
+#pc-1:checked ~ .projects label[for="pc-4"] {
 	transform: translateX(900px) translateZ(-270px) rotateY(-35deg);
 	z-index: 1;
 }
@@ -498,7 +504,10 @@ input[type=checkbox] {
 	z-index: 4;
 }
 
-
+/*
+======================================================
+    end portfolio sliders
+=======================================================
 
 /*
 =======================================================
@@ -507,7 +516,7 @@ Contact Form
 */
 
 .contact-section {
-    background: #373e40;
+    background: var(--charcoal);
     margin: 0;
     border: 0;
     padding: 10px;
