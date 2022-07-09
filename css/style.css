@@ -1,3 +1,13 @@
+:root {
+  --ashgray: #cad2c5;
+  --darkSeaGreen: #84a98c;
+  --hookersGreen: #52796f;
+  --darkSlateGray: #354f52;
+  --charcoal: #2f3346;
+}
+
+
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -8,7 +18,7 @@ body {
     font-family: 'Times New Roman', Times, serif;
     line-height: 1.6;
     min-height: 100vh;
-    background-color: #373e40;
+    background-color: var(--charcoal);
 }
 
 a {
@@ -36,6 +46,7 @@ li {
 */
 
 .navbar {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -157,16 +168,19 @@ input[type=checkbox] {
     border-radius: 30px;
     box-shadow: 2px 5px 15px 8px #488286;
 }
-/* Animaton for aboutme-intro */
+
+
+
+/* Start of Animaton for aboutme-intro */
 
 .animate-text {
   text-transform: uppercase;
   background-image: linear-gradient(
-      -255deg,
-      #231557 0%,
-      #44107a 29%,
-      #ff1361 67%,
-      #fff800 100%
+      255deg,
+      var(--ashgray) 0%,
+      var(--darkSeaGreen) 29%,
+      var(--hookersGreen) 67%,
+      var(--darkSlateGray) 100%
   );
   background-size: auto auto;
   background-clip: border-box;
@@ -179,7 +193,6 @@ input[type=checkbox] {
   display: flex;
   flex-wrap: nowrap;
   font-size: 3rem;
-
 }
 
 @keyframes textclip {
@@ -188,7 +201,7 @@ input[type=checkbox] {
   }
 }
 
-
+/* End of Animaton for aboutme-intro */
 
 /* 
 ==============================================
@@ -431,63 +444,10 @@ textarea.contact-form-text {
     Media Queries
 ==========================================
 */
-  
-@media (max-width: 480px) {
 
 
-  .aboutme-main {
-    display: flex;
-    flex-direction: column;
-  }
-
-  #loader {
-    display: flex;
-    justify-content: center;
-  }
-
-  .aboutme-text {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-
-  .my-picture img {
-    width: 310px;
-    height: 400px;
-  }
-
-  .my-picture {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-
-  }
-
-  .aboutme-intro {
-    width: 100%;
-    align-items: flex-start;
-    padding: 0;
-  }
-
-  .animate-text {
-    font-size: 30px;
-    text-align: center;
-    width: 100%;
-  }
-
-  .column {
-    border: 1px solid red;
-    padding: 0;
-
-
-  }
-
-}
-
-
-@media (max-width: 768px) {
+@media (max-width: 800px) {
+        /* Start of Hamburger */
   .menu {
     display: none;
     position: absolute;
@@ -525,58 +485,44 @@ textarea.contact-form-text {
   .dropdown li:hover {
     background-color: #4c9e9e;
   }
+        /* End of hamburger */
 
   .my-picture {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
   }
-
-  .aboutme-main {
+ 
+  .aboutme-text {
     display: flex;
     flex-direction: column;
   }
 
-  #loader {
-    display: flex;
-    justify-content: center;
-  }
-
-
-
-  .my-picture {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-
-  .column {
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
-  }
 }
 
-@media (min-width: 768px) {
-    .aboutme-content, 
-    .aboutme-text h2,
-    .aboutme-text p {
-      display: flex;
-      flex-direction: column;
-    }
-
-
+@media (max-width: 500px) {
+  .my-picture {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    padding: 0;
   }
 
-@media (min-width: 800px) {
-  .aboutme-content {
+  .my-picture > img {
+    width: 250px;
+    height: 300px;
+  }
+
+  .aboutme-intro {
+    border: 1px solid red;
+    padding: 0;
+  }
+
+  .aboutme-intro > h1 {
+    font-size: 30px;
+    padding: 20px;
     justify-content: center;
     align-items: center;
-    width: 100%;
   }
+
 }
