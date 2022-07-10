@@ -169,7 +169,15 @@ input[type=checkbox] {
     box-shadow: 2px 5px 15px 8px #488286;
 }
 
-
+.about-me-name {
+  display: flex;
+  width: 100%;
+  font-size: 4rem;
+  letter-spacing: 0.5rem;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
 
 /* Start of Animaton for aboutme-intro */
 
@@ -193,6 +201,8 @@ input[type=checkbox] {
   display: flex;
   flex-wrap: nowrap;
   font-size: 3rem;
+  text-align: center;
+  
 }
 
 @keyframes textclip {
@@ -697,6 +707,16 @@ textarea.contact-form-text {
     flex-direction: column;
   }
 
+  .about-me-name {
+    padding: 0;
+    margin: 0;
+    font-size: 3rem;
+
+  }
+
+  .aboutme-intro h1 {
+    font-size: 3rem;
+  }
 }
 
 @media (max-width: 500px) {
@@ -714,8 +734,12 @@ textarea.contact-form-text {
   }
 
   .aboutme-intro {
-    border: 1px solid red;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
   .aboutme-intro > h1 {
@@ -723,6 +747,12 @@ textarea.contact-form-text {
     padding: 20px;
     justify-content: center;
     align-items: center;
+    margin: 0;
+    padding: 10px;
+  }
+
+  .about-me-name {
+    font-size: 3rem;
   }
 
 }
