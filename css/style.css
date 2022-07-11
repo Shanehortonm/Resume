@@ -119,7 +119,11 @@ input[type=checkbox] {
     .Intro
 ===============================================================
 */
-
+.intro-container {
+  border: 1px solid red;
+  width: 100%;
+  height: 10vh;
+}
 /*
 ===============================================================
     About-Me-Section
@@ -156,9 +160,11 @@ input[type=checkbox] {
   flex-wrap: wrap;
   width: 100%;
   padding: 10px 50px;
-  align-items: baseline;
+  justify-content: center;
+  align-items: center;
   word-wrap: nowrap;
   grid-column: 2 / 2;
+
 }
 
 .my-picture img {
@@ -169,7 +175,7 @@ input[type=checkbox] {
     box-shadow: 2px 5px 15px 8px #488286;
 }
 
-.about-me-name {
+.aboutme-name {
   display: flex;
   width: 100%;
   font-size: 4rem;
@@ -310,7 +316,7 @@ input[type=checkbox] {
 	font-family: sans-serif;
 	display: flex;
 	align-items: center;
-	min-height: 100vh;
+	height: 70vh;
 }
 .project-slider {
 	width: 100%;
@@ -518,7 +524,40 @@ input[type=checkbox] {
 ======================================================
     end portfolio sliders
 =======================================================
+*/
+/*
+=======================================================
+    Start of Work History
+=======================================================
+*/
 
+.resume-container {
+  border: 1px solid red;
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+.resume-grid > div {
+  border: 1px solid red;
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-rows: repeat(6, 1fr);
+}
+
+.resume-header {
+  color: white.0369*;
+}
+
+
+
+/*
+=======================================================
+    End of Work History
+=======================================================
+*/
 /*
 =======================================================
 Contact Form
@@ -707,7 +746,7 @@ textarea.contact-form-text {
     flex-direction: column;
   }
 
-  .about-me-name {
+  .aboutme-name {
     padding: 0;
     margin: 0;
     font-size: 3rem;
@@ -743,16 +782,10 @@ textarea.contact-form-text {
   }
 
   .aboutme-intro > h1 {
-    font-size: 30px;
-    padding: 20px;
+    font-size: 25px;
     justify-content: center;
     align-items: center;
     margin: 0;
     padding: 10px;
   }
-
-  .about-me-name {
-    font-size: 3rem;
-  }
-
 }
