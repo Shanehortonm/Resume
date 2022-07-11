@@ -281,7 +281,7 @@ input[type=checkbox] {
 
 .loader {
     width: 50px; /* control the size */
-    aspect-ratio: 1;
+    aspect-ratio: 2;
     display: grid;
     -webkit-mask: conic-gradient(from 22deg, #0003,#000);
             mask: conic-gradient(from 22deg, #0003,#000);
@@ -531,43 +531,51 @@ input[type=checkbox] {
 =======================================================
 */
 
-.resume-container {
-  border: 1px solid red;
-  width: 100%;
-  height: 100vh;
-  padding: 0;
-  margin: 0;
-}
-
-.resume-grid > div {
-  border: 1px solid red;
-  display: grid;
-  width: 100%;
-  height: 100%;
-  grid-template-rows: repeat(6, 1fr);
-}
-
-.resume-header {
-  color: white.0369*;
-}
-
-
 
 /*
 =======================================================
     End of Work History
 =======================================================
 */
+
+.resume-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  margin-top: 10vh;
+}
+
+.resume-grid {
+  background-color: var(--ashgray)
+}
+
+.resume-grid > div {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-rows: repeat(6, 1fr);
+}
+
+.resume-grid > div > h2 {
+  text-align: center;
+}
+
 /*
 =======================================================
 Contact Form
 =======================================================
 */
 
+.contact-container {
+  margin-top: 100px;
+}
+
 .contact-section {
     background: var(--charcoal);
     margin: 0;
-    border: 0;
+    border: 20px;
     padding: 10px;
 }
 
@@ -756,6 +764,10 @@ textarea.contact-form-text {
   .aboutme-intro h1 {
     font-size: 3rem;
   }
+
+  .column > h2 {
+    font-size: 2.5rem;
+  }
 }
 
 @media (max-width: 500px) {
@@ -788,4 +800,18 @@ textarea.contact-form-text {
     margin: 0;
     padding: 10px;
   }
+
+  .resume-container, .resume-grid {
+    flex: auto;
+    width: 100%;
+    font-size: large;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .resume-grid > div > h2{
+    padding: 20px;
+  }
+
+
 }
