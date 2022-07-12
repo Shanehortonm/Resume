@@ -338,7 +338,7 @@ input[type=checkbox] {
 	top: 0;
 	position: absolute;
 	box-sizing: border-box;
-	background-color: #0A0220;
+	background-color: var(--hookersGreen);
 	padding: 30px;
 	width: 450px;
   height: 320px;
@@ -352,7 +352,7 @@ input[type=checkbox] {
 .projects .project-card img {
 	width: 150px;
 	border-radius: 50%;
-	border: 2px solid #3B344D;
+	border: 2px solid var(--ashgray);
 }
 .projects .project-card p {
 	color: #ddd;
