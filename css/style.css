@@ -350,15 +350,17 @@ input[type=checkbox] {
 	cursor: pointer;
 }
 .projects .project-card img {
-	width: 150px;
+	width: 200px;
+  height: 150px;
 	border-radius: 50%;
 	border: 2px solid var(--ashgray);
 }
 .projects .project-card p {
 	color: #ddd;
+  font-size: 1rem;
 }
 .projects .project-card h2 {
-	font-size: 14px;
+	font-size: 24px;
 }
 .project-dots {
 	display: flex;
@@ -596,10 +598,6 @@ input[type=checkbox] {
   line-height: 50px;
 }
 
-.resume-skills > h2 {
-  font
-}
-
 
 
 
@@ -750,6 +748,10 @@ textarea.contact-form-text {
     text-align: center;
 }
 
+.footer-content p {
+  font-size: medium;
+}
+
 
 /* 
 ==========================================
@@ -758,7 +760,16 @@ textarea.contact-form-text {
 */
 
 
-@media (max-width: 800px) {
+@media (max-width: 820px) {
+
+  body {
+    display: auto;
+  }
+
+  p {
+    font-size: 24px;
+  }
+
         /* Start of Hamburger */
   .menu {
     display: none;
@@ -768,6 +779,10 @@ textarea.contact-form-text {
     left:  0;
     text-align: center;
     padding: 16px 0;
+  }
+
+  .menu a {
+    font-size: 24px;
   }
 
   .menu li:hover {
@@ -792,6 +807,10 @@ textarea.contact-form-text {
     left: 50%;
     top: 30px;
     transform: translateX(35%);
+  }
+
+  .dropdown li {
+    font-size: 20px;
   }
 
   .dropdown li:hover {
@@ -823,9 +842,27 @@ textarea.contact-form-text {
   .column > h2 {
     font-size: 2.5rem;
   }
+
+  .column > p {
+    font-size: 24px;
+  }
+
 }
 
+
+
+
+
 @media (max-width: 500px) {
+  
+  body {
+    display: auto;
+  }
+
+  p {
+    font-size: large;
+  }
+
   .my-picture {
     display: flex;
     margin: 0;
@@ -849,13 +886,19 @@ textarea.contact-form-text {
   }
 
   .aboutme-intro > h1 {
-    font-size: 25px;
+    font-size: 2.5rem;
     justify-content: center;
     align-items: center;
     margin: 0;
     padding: 10px;
   }
 
+  .resume-grid {
+    width: 90%;
+    font-size: large;
+  }
 
-
+  .footer-content p {
+    font-size: small;
+  }
 }

@@ -29,12 +29,12 @@
             <a href="/">Portfolio</a>
             <!-- Drop Down Menu-->
             <ul class="dropdown">
-              <li><a href="/">Cowboys HOF</a></li>
-              <li><a href="/">ALE Cleaning</a></li>
-              <li><a href="/">Retro Page</a></li>
-              <li><a href="/">Goat Soap</a></li>
+              <li><a href="#project-top">Cowboys HOF</a></li>
+              <li><a href="#project-top">ALE Cleaning</a></li>
+              <li><a href="#project-top">Retro Page</a></li>
+              <li><a href="#project-top">Goat Soap</a></li>
             </ul>
-          <li><a href="/">Work Experience</a></li>
+          <li><a href="#work-experience">Work Experience</a></li>
           </li>
           <li><a href="#contact-section-anchor">Contact Me</a></li>
           <!-- REMEMBER TO MAKE THIS A BUTTON -->
@@ -71,7 +71,13 @@
 
             <div class="column">
               <h2>About Me</h2>
-              <p>Text about me</p>
+              <p>Hello! I am a Front-End Web Developer based out of Louisville, Kentucky.<br>
+                From building a entire website with html, css and JavaScript to simply learning new information about the ever changing tech industry,
+                I love combining logic and creative design to make eye-catching, accessible and user-friendly websites and applications.<br>
+                After seeing and feeling how passonate I truly am about becoming a well-rounded Web Developer, I am beyond excited to make the leap and
+                continue learning and refining my skills with the right company.<br>
+                Drop me a message in the contact form below and I could possibly be the
+                TEAM PLAYER you need!</p>
             </div>
             <div class="column" id="loader2">
               <div class="loader"></div>
@@ -83,7 +89,7 @@
 
       <!-- Start of Portfolio -->
       <section>
-        <div class="portfolio-container">
+        <div class="portfolio-container" id="project-top">
           <div class="project-slider">
             <input type="radio" name="project" id="pc-1" />
             <input type="radio" name="project" id="pc-2" />
@@ -91,33 +97,29 @@
             <input type="radio" name="project" id="pc-4" />
             <input type="radio" name="project" id="pc-5" />
             <div class="projects">
-              <label class="project-card" for="pc-1">
+              <label class="project-card" for="pc-1" id="ale-cleaning">
                 <img
                   src="https://dummyimage.com/150"
                   alt="picture"
                   class="project-img-1"
                 />
                 <p>
-                  "Raw denim you probably haven't heard of them jean short
-                  austin. Nesciunt tofu stumptown aliqua, retro synth master
-                  cleanse."
+                  "Fresh and Crisp website designed for a Local Cleaning Company"
                 </p>
-                <h2>- Princy, Web Developer</h2>
+                <h2>- ALE Cleaning</h2>
               </label>
-              <label class="project-card" for="pc-2">
+              <label class="project-card" for="pc-2" id="retro-page">
                 <img
                   src="https://dummyimage.com/150"
                   alt="picture"
                   class="project-img-2"
                 />
                 <p>
-                  "Raw denim you probably haven't heard of them jean short
-                  austin. Nesciunt tofu stumptown aliqua, retro synth master
-                  cleanse."
+                  "Using CSS3, created a "Tile" Home/Landing Page."
                 </p>
-                <h2>- Princy, Web Developer</h2>
+                <h2>- Retro Home Page</h2>
               </label>
-              <label class="project-card" for="pc-3">
+              <label class="project-card" for="pc-3" id="cowboys">
                 <img
                   src="img/cowboysHOFss.jpg"
                   alt="screen shoot of cowboysHOF website"
@@ -129,31 +131,27 @@
                 </p>
                 <h2>- Cowboys HOF Website</h2>
               </label>
-              <label class="project-card" for="pc-4">
+              <label class="project-card" for="pc-4" id="goat-soap">
                 <img
                   src="https://dummyimage.com/150"
                   alt="picture"
                   class="project-img-4"
                 />
                 <p>
-                  "Raw denim you probably haven't heard of them jean short
-                  austin. Nesciunt tofu stumptown aliqua, retro synth master
-                  cleanse."
+                  "Website designed for the Sell of Locally produced Goat-milk based Soap"
                 </p>
-                <h2>- Princy, Web Developer</h2>
+                <h2>- Goat Soap Website</h2>
               </label>
               <label class="project-card" for="pc-5">
                 <img
-                  src="https://dummyimage.com/150"
-                  alt="picture"
+                  src="img/landingpage.png"
+                  alt="landing page screenshot"
                   class="project-img-5"
                 />
                 <p>
-                  "Raw denim you probably haven't heard of them jean short
-                  austin. Nesciunt tofu stumptown aliqua, retro synth master
-                  cleanse."
+                  "Multiple Landing Page ideas using CSS3 and JavaScript."
                 </p>
-                <h2>- Princy, Web Developer</h2>
+                <h2>- Landing Page Practice</h2>
               </label>
             </div>
             <div class="project-dots">
@@ -168,7 +166,7 @@
       </section>
       <!-- End of Portfolio -->
       <!-- Start of Work History -->
-      <section class="resume-container">
+      <section class="resume-container" id="work-experience">
         <div class="resume-grid">
           <div class="resume-header">
             <h2>Shane Horton</h2>
@@ -187,11 +185,11 @@
           </div>
           <div class="resume-skills">
             <h2>Skills</h2>
-            <p>Front End: HTML5, CSS3, JavaScript<br>
-              Git, GitHub, Visual Studio Code<br>
-              Time Management<br>
-              Critical Thinking<br>
-              Team Management</p>
+            <p>Front End: HTML5, CSS3, JavaScript.<br>
+              Version Control: Git, GitHub, Visual Studio Code.<br>
+              - Time Management<br>
+              - Critical Thinking<br>
+              - Team Management</p>
           </div>
           <div class="resume-project">
             <h2>Projects</h2>
