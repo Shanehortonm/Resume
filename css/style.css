@@ -845,6 +845,8 @@ textarea.contact-form-text {
 
   .column > p {
     font-size: 24px;
+    line-height: 2rem;
+    line-break: 20px;
   }
 
 }
