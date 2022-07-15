@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Shane's Resume | Home</title>
+  </head>
+  <body>
+    <!-- Start of Header/Nav -->
+    <nav class="navbar">
+      <div class="logo">Welcome,</div>
+      <ul class="nav-links">
+        <!-- hamburger menu -->
+        <input type="checkbox" id="checkbox-toggle" />
+        <label for="checkbox-toggle" class="hamburger">&#9776;</label>
+        <!-- Nav Menus-->
+        <div class="menu">
+          <li><a href="/">Home</a></li>
+          <li><a href="#about-me">About Me</a></li>
+          <li class="portfolio">
+            <a href="/">Portfolio</a>
+            <!-- Drop Down Menu-->
+            <ul class="dropdown">
+              <li><a href="#project-top">Cowboys HOF</a></li>
+              <li><a href="#project-top">ALE Cleaning</a></li>
+              <li><a href="#project-top">Retro Page</a></li>
+              <li><a href="#project-top">Goat Soap</a></li>
+            </ul>
+          <li><a href="#work-experience">Work Experience</a></li>
+          </li>
+          <li><a href="#contact-section-anchor">Contact Me</a></li>
+          <!-- REMEMBER TO MAKE THIS A BUTTON -->
+        </div>
+      </ul>
+    </nav>
+    <!-- End of Header/Nav -->
+
+    <!-- Start of Main Content-->
+    <main>
+      <!-- Start of Intro -->
+
+      <section class="intro-container"></section>
+
+      <!-- End of Intro -->
+
+      <!-- Start of About Me -->
+      <section class="aboutme-main">
+        <div class="my-picture">
+          <img src="img/20211125_161739_2.jpg" alt="Shane Horton" />
+          <div class="aboutme-intro">
+            <h1 class="animate-text">Hello, I'm</h1>
+            <h1 class="aboutme-name">Shane</h1>
+            <h1 class="animate-text">I am a Web Developer</h1>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="aboutme-content" id="about-me">
+          <div class="aboutme-text">
+            <div class="column" id="loader1">
+              <div class="loader"></div>
+            </div>
+
+            <div class="column">
+              <h2>About Me</h2>
+              <p>Hello! I am a Front-End Web Developer based out of Louisville, Kentucky.<br>
+                From building a entire website with html, css and JavaScript to simply learning new information about the ever changing tech industry,
+                I love combining logic and creative design to make eye-catching, accessible and user-friendly websites and applications.<br>
+                After seeing and feeling how passionate I truly am about becoming a well-rounded Web Developer, I am beyond excited to make the leap and
+                continue learning and refining my skills with the right company.<br>
+                Drop me a message in the contact form below and I could possibly be the
+                TEAM PLAYER you need!</p>
+            </div>
+            <div class="column" id="loader2">
+              <div class="loader"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of About Me -->
+
+      <!-- Start of Portfolio -->
+      <section>
+        <div class="portfolio-container" id="project-top">
+          <div class="project-slider">
+            <input type="radio" name="project" id="pc-1" />
+            <input type="radio" name="project" id="pc-2" />
+            <input type="radio" name="project" id="pc-3" checked />
+            <input type="radio" name="project" id="pc-4" />
+            <input type="radio" name="project" id="pc-5" />
+            <div class="projects">
+              <label class="project-card" for="pc-1" id="ale-cleaning">
+                <img
+                  src="https://dummyimage.com/150"
+                  alt="picture"
+                  class="project-img-1"
+                />
+                <p>
+                  "Fresh and Crisp website designed for a Local Cleaning Company"
+                </p>
+                <h2>- ALE Cleaning</h2>
+              </label>
+              <label class="project-card" for="pc-2" id="retro-page">
+                <img
+                  src="https://dummyimage.com/150"
+                  alt="picture"
+                  class="project-img-2"
+                />
+                <p>
+                  "Using CSS3, created a "Tile" Home/Landing Page."
+                </p>
+                <h2>- Retro Home Page</h2>
+              </label>
+              <label class="project-card" for="pc-3" id="cowboys">
+                <img
+                  src="img/cowboysHOFss.jpg"
+                  alt="screen shoot of cowboysHOF website"
+                  class="project-img-3"
+                />
+                <p>
+                  "Using CSS3 and JavaScript, this website is a Flex Panel
+                  project"
+                </p>
+                <h2>- Cowboys HOF Website</h2>
+              </label>
+              <label class="project-card" for="pc-4" id="goat-soap">
+                <img
+                  src="https://dummyimage.com/150"
+                  alt="picture"
+                  class="project-img-4"
+                />
+                <p>
+                  "Website designed for the Sell of Locally produced Goat-milk based Soap"
+                </p>
+                <h2>- Goat Soap Website</h2>
+              </label>
+              <label class="project-card" for="pc-5">
+                <img
+                  src="img/landingpage.png"
+                  alt="landing page screenshot"
+                  class="project-img-5"
+                />
+                <p>
+                  "Multiple Landing Page ideas using CSS3 and JavaScript."
+                </p>
+                <h2>- Landing Page Practice</h2>
+              </label>
+            </div>
+            <div class="project-dots">
+              <label for="pc-1"></label>
+              <label for="pc-2"></label>
+              <label for="pc-3"></label>
+              <label for="pc-4"></label>
+              <label for="pc-5"></label>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of Portfolio -->
+      <!-- Start of Work History -->
+      <section class="resume-container" id="work-experience">
+        <div class="resume-grid">
+          <div class="resume-header">
+            <h2>Shane Horton</h2>
+              <div class="resume-holder-set-1">
+                <p>Louisville, Ky 502-889-6411</p>
+                <p>Shanehortonm@gmail.com</p>
+              </div>
+              <div class="resume-holder-set-2">
+                <p>LinkIn - shane-horton-265874181</p>
+                <p>GitHub - Shanehortonm</p>
+              </div>
+          </div>
+          <div class="resume-summary">
+            <h2>Summary</h2>
+            <p>Future Junior Web Developer with a passion for website/web application 
+              development and the success of client relations. Agile learner who is 
+              constantly keeping up to date with ever changing industry technology.
+              Dedicated to learning and becoming a driving force of innovation while
+              keeping the ability to follow industry and technological trends.</p>
+          </div>
+          <div class="resume-skills">
+            <h2>Skills</h2>
+            <p>Front End: HTML5, CSS3, JavaScript.<br>
+              Version Control: Git, GitHub, Visual Studio Code.<br>
+              - Time Management<br>
+              - Critical Thinking<br>
+              - Team Management</p>
+          </div>
+          <div class="resume-project">
+            <h2>Projects</h2>
+            <p>abc</p>
+          </div>
+          <div class="resume-education">
+            <h2>Education and Certifications</h2>
+            <p>abc</p>
+          </div>
+          <div class="resume-work-history">
+            <h2>Relevant Work History</h2>
+            <p>abc</p>
+          </div>
+        </div>
+      </section>
+      <!-- End of Work History -->
+    </main>
+    <!-- End of Main -->
+    <!-- Start of Contact Box-->
+
+    <section class="contact-container">
+      <div class="contact-section" id="contact-section">
+        <h1>Connect with Me</h1>
+        <p>
+          I would love to to hear your feedback! Feel free to get in touch with
+          me.
+        </p>
+        <div class="contact-border" id="contact-section-anchor"></div>
+        <form class="contact-form" action="index.html" method="post">
+          <input
+            type="text"
+            class="contact-form-text"
+            placeholder="Your Name..."
+          />
+          <input
+            type="email"
+            class="contact-form-text"
+            placeholder="Your Email..."
+          />
+          <input
+            type="text"
+            class="contact-form-text"
+            placeholder="Your Phone Number..."
+          />
+          <textarea
+            class="contact-form-text"
+            placeholder="Your Message..."
+          ></textarea>
+          <input type="submit" class="contact-form-btn" value="SEND" />
+        </form>
+      </div>
+    </section>
+
+    <!-- End of Contact Box-->
+
+    <!-- End of Main Content-->
+
+    <!-- Start of Footer-->
+    <footer class="footer-container">
+      <div class="footer-content">
+        <p>&copy; 2022 Resume page for Shane "Saucey" Horton</p>
+      </div>
+    </footer>
+    <!-- End of Footer-->
+  </body>
+</html>
