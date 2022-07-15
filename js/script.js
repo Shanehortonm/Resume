@@ -1,9 +1,7 @@
-let gotName = false;
+window.onload = function(){
+    let name = prompt("Hey There! What's your name?");
+    confirm("Just double checking, your name is " + name + " right?")
+    let userName = name
 
-while (gotName == false){
-    let userName = prompt("Hey there! What is your name?")
-    if (confirm ("Just double checking, your name is " + userName + "?")){
-    alert (" Welcome to my Resume page " + userName + "!")}
-    gotName = true;
-}
-
+    document.getElementById('jsName').innerHTML = userName;
+};
