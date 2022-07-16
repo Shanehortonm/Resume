@@ -34,11 +34,26 @@ li {
         Top Header
 ==========================================================
 */
+
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  
+
+}
+
 .logo {
   font-size: 40px;
   font-family: 'Times New Roman', Times, serif;
   user-select: none;
-} 
+}
+
+.logo-container p {
+  font-size: 40px;
+}
 
 /*
 ==========================================================
@@ -344,7 +359,7 @@ input[type=checkbox] {
   height: 320px;
 	text-align: center;
 	transition: transform 0.4s;
-	-webkit-transform-style: preserve-3d;
+	
 	box-shadow: 0 0 10px rgba(0,0,0,0.3);
 	user-select: none;
 	cursor: pointer;
@@ -770,6 +785,11 @@ textarea.contact-form-text {
     font-size: 24px;
   }
 
+  .logo-container {
+    width: auto;
+    padding-left: 60px;
+  }
+
         /* Start of Hamburger */
   .menu {
     display: none;
@@ -863,6 +883,11 @@ textarea.contact-form-text {
 
   p {
     font-size: large;
+  }
+
+  .logo-container {
+    width: auto;
+    padding-left: 0px;
   }
 
   .my-picture {

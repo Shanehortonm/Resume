@@ -219,8 +219,14 @@ body {
 .menu-wrap .menu > div > div > ul > li {
     list-style: none;
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     padding: 1rem;
+    text-decoration: underline;
+}
+
+.menu-wrap .menu > div > div > ul > li:hover {
+    transition: 0.6s ease-in-out;
+    opacity: 0.5;
 }
 
 .menu-wrap .menu > div > div > ul > li > a {
