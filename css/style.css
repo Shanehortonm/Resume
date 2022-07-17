@@ -261,8 +261,9 @@ input[type=checkbox] {
 
 /* Created 4 equal columns*/
 .column {
-  display: flex;
-  flex-direction: column;
+  border: 1px solid red;
+  display: grid;
+  flex-direction: row;
   padding: 50px;
   justify-content: center;
   align-items: center;
@@ -279,13 +280,16 @@ input[type=checkbox] {
   justify-content: center;
   align-items: center;
 }
+
 .aboutme-text h2 {
-    font-size: 3rem;
+  text-align: center;
+  font-size: 4rem;
 }
 
 .aboutme-text p {
-    font-size: 1.3rem;
-    line-height: 1.3;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.9rem;
 }
 
 
@@ -297,7 +301,7 @@ input[type=checkbox] {
 
 .loader {
     width: 50px; /* control the size */
-    aspect-ratio: 2;
+    aspect-ratio: 3;
     display: grid;
     -webkit-mask: conic-gradient(from 22deg, #0003,#000);
             mask: conic-gradient(from 22deg, #0003,#000);
@@ -573,14 +577,21 @@ input[type=checkbox] {
   justify-content: center;
   align-items: center;
   padding: 5rem;
+  font-size: 1.3rem;
+  text-align: center;
 }
 
 .resume-grid > div > h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
   text-decoration: underline;
+}
+
+.resume-grid > div > p {
+  font-size: 1.3rem;
+  text-align: center;
 }
 
 .resume-header > div {
