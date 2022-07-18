@@ -261,7 +261,6 @@ input[type=checkbox] {
 
 /* Created 4 equal columns*/
 .column {
-  border: 1px solid red;
   display: grid;
   flex-direction: row;
   padding: 50px;
@@ -630,12 +629,6 @@ input[type=checkbox] {
 
 
 
-
-
-
-
-
-
 /* Spinner Element */
 .spinner-logo {
   width: 50px;
@@ -927,8 +920,21 @@ textarea.contact-form-text {
     font-size: 2.5rem;
     justify-content: center;
     align-items: center;
-    margin: 0;
-    padding: 10px;
+    margin-top: 10px;
+  }
+
+  .aboutme-text {
+    padding: 0;
+    margin: 20px;
+  }
+  .aboutme-text h2{
+    font-size: 2.5rem;
+    margin-bottom: 1em;
+  }
+
+  .aboutme-text p {
+    line-height: 2.5rem;
+    font-size: 1.3rem;
   }
 
   .resume-grid {
