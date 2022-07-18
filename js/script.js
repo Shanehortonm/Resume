@@ -23,3 +23,18 @@ alert ('Welcome ' + userName + ('!'));
 
 
 document.getElementById('jsName').innerHTML = userName + '!';*/
+
+
+const contactName = document.getElementById('contact-name');
+const contactEmail = document.getElementById('contact-email');
+const contactNumber = document.getElementById('contact-number');
+const contactMessage = document.getElementById('contact-message');
+const contactError = document.getElementById('error');
+const contactForm = document.getElementById('contact-form');
+
+form.addEventListener('submit', (e) => {
+    let messages = []
+    if (contactName.value === '' ||  contactName.value === null) {
+        messages.push('Name is required')
+    }
+})

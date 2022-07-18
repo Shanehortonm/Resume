@@ -225,27 +225,32 @@
           me.
         </p>
         <div class="contact-border" id="contact-section-anchor"></div>
-        <form class="contact-form" action="index.html" method="post">
+        <div id="error"></div>
+        <form class="contact-form" id="contact-form" action="index.html" method="post">
           <input
             type="text"
             class="contact-form-text"
+            id="contact-name"
             placeholder="Your Name..."
           />
           <input
             type="email"
             class="contact-form-text"
+            id="contact-email"
             placeholder="Your Email..."
           />
           <input
             type="text"
             class="contact-form-text"
+            id="contact-number"
             placeholder="Your Phone Number..."
           />
           <textarea
             class="contact-form-text"
             placeholder="Your Message..."
+            id="contact-message"
           ></textarea>
-          <input type="submit" class="contact-form-btn" value="SEND" />
+          <input type="submit" class="contact-form-btn" id="contact-btn" value="SEND" />
         </form>
       </div>
     </section>
