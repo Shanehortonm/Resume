@@ -1,25 +1,26 @@
 window.onload = function(){
-    let name = prompt("Hey There! What's your name?");
-    let userName = name;
+    let userName = prompt("Hey There! What's your name?");
 
     if (userName == null || userName == '') {
         prompt('Come on, Whats your name?')
         if(userName == null || userName == '') {
             prompt('Okay then, you do not have too tell me if you do not want too')
         } else {
-            
-        }
-    } else {
-        let userNameConfirm = confirm('Just making sure your name is ' + userName + '?')
-        if (userNameConfirm == null) {
             userName = 'Guest'
         }
-        alert('Thanks for stopping by ' + userName)
+    } else {
+        confirm('Just making sure your name is ' + userName + '?')
+        if (userName == null || userName == '') {
+            userName = 'Guest'
+        }
     }
 
-    if (userName == null) {
+    if (userName == null || userName == '') {
         userName = 'Guest';
     }
+
+    alert('Thanks for your support ' + userName + '!')
+
 
     document.getElementById('jsName').innerHTML = userName + "!";
 };
