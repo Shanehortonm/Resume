@@ -2,11 +2,36 @@ window.onload = function(){
     let userName = prompt("Hey There! What's your name?");
 
     if (userName == null || userName == '') {
-        prompt('Come on, Whats your name?')
+       userName = prompt('Come on, Whats your name?')
         if(userName == null || userName == '') {
             prompt('Okay then, you do not have too tell me if you do not want too')
-        } else {
+        } /*else if (userName ===     )*/ 
+        
+    } else {
+        confirm('Just making sure your name is ' + userName + '?')
+        if (userName == null || userName == '') {
             userName = 'Guest'
+        }
+    }
+
+    if (userName == null || userName == '') {
+        userName = 'Guest';
+    }
+
+    alert('Thanks for your support ' + userName + '!')
+
+                                       
+    document.getElementById('jsName').innerHTML = userName + "!";
+};
+
+
+/*function getName (){
+    let userName = prompt("Hey There! What's your name?");
+
+    if (userName == null || userName == '') {
+        userName = prompt('Come on, Whats your name?');
+        if(userName == null || userName == '') {
+            alert('Okay then, you do not have too tell me if you do not want too')
         }
     } else {
         confirm('Just making sure your name is ' + userName + '?')
@@ -21,59 +46,17 @@ window.onload = function(){
 
     alert('Thanks for your support ' + userName + '!')
 
-
     document.getElementById('jsName').innerHTML = userName + "!";
 };
 
+getName()
+
+
+  */
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*let userName = prompt ('Yo What your name is?');
-confirm ('Just making sure your name is ' + userName + ('?'));
-alert ('Welcome ' + userName + ('!'));
-
-/*if (userName = null) {
-    prompt ('Come on now, what is your name?');
-} else {
-    confirm ('Just making sure your name is ' + userName + ('?'));
-alert ('Welcome ' + userName + ('!'));
-}
-
-
-document.getElementById('jsName').innerHTML = userName + '!';*/
 
 
 /*const contactName = document.getElementById('contact-name');

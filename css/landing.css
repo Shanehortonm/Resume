@@ -113,7 +113,6 @@ body {
     width: 60px;
     height: 60px;
     padding: 1rem;
-    background-color: var(--pr);
     display: flex;
     align-items: center;
     justify-content: center;
