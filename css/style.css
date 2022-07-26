@@ -14,7 +14,9 @@
     padding: 0;
     margin: 0;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
     font-family: 'Times New Roman', Times, serif;
     line-height: 1.6;
@@ -29,6 +31,8 @@ a {
 li {
   list-style: none;
 }
+
+
 /*
 ==========================================================
         Top Header
@@ -268,6 +272,7 @@ input[type=checkbox] {
   align-items: center;
 }
 
+
 #loader1 {
   display: flex;
   justify-content: center;
@@ -281,9 +286,14 @@ input[type=checkbox] {
 }
 
 .aboutme-text h2 {
+  font-family: 'Dancing Script', 'Times New Roman', Times, serif;
   text-align: center;
-  font-size: 4rem;
+  letter-spacing: 4px;
+  padding-bottom: 50px;
+  text-transform: uppercase;
 }
+
+
 
 .aboutme-text p {
   text-align: center;
@@ -673,7 +683,7 @@ Contact Form
 
 .contact-container {
   margin-top: 50px;
-  margin-bottom: 70px;
+  margin-bottom: 10px;
   padding: 3rem;
   height: 90vh;
   width: 100%;
@@ -912,6 +922,7 @@ textarea.contact-form-text {
   }
 
   .footer-container {
+    width: auto;
     height: 100%;
     margin-top: 20px;
   }
@@ -1004,5 +1015,27 @@ textarea.contact-form-text {
     font-size: 1.2em;
   }
 
+  .contact-container {
+    margin-bottom: 100px;
+  }
+
+
+  .footer-container {
+    margin-top: 20px;
+  }
+  .footer-content {
+    height: auto;
+    width: auto;
+  }
+
+  .footer-content p {
+    text-align: center;
+    width: fit-content;
+  }
+
+  .social {
+    width: auto;
+    height: auto;
+  }
   
 }
