@@ -141,7 +141,7 @@ input[type=checkbox] {
 */
 #top-btn {
   /*display: none;*/
-  position: sticky;
+  position: fixed;
   bottom: 25px;
   right: 35px;
   z-index: 1000;
