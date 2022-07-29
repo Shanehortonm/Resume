@@ -842,7 +842,7 @@ textarea.contact-form-text {
 */
 
 
-@media (max-width: 820px) {
+@media (max-width: 950px) {
 
   body {
     display: auto;
@@ -857,37 +857,8 @@ textarea.contact-form-text {
     padding-left: 60px;
   }
 
-        /* Start of Hamburger */
-  .menu {
-    display: none;
-    position: absolute;
-    background-color: teal;
-    right: 0;
-    left:  0;
-    text-align: center;
-    padding: 16px 0;
-  }
-
-  .menu a {
-    font-size: 24px;
-  }
-
-  .menu li:hover {
-    display: inline-block;
-    background-color: #4c9e9e;
-    transition:  0.3s ease-in-out;
-  }
-
-  .menu li + li {
-    margin-top: 12px;
-  }
-
-  input[type=checkbox]:checked ~ .menu  { /* using a adjacent selector */
-    display: block;
-  }
-
-  .hamburger {
-    display: block;
+  .navbar {
+    flex-direction: column;
   }
 
   .dropdown {
@@ -957,9 +928,6 @@ textarea.contact-form-text {
 }
 
 
-
-
-
 @media (max-width: 500px) {
   
   body {
@@ -968,6 +936,42 @@ textarea.contact-form-text {
 
   p {
     font-size: large;
+  }
+  .navbar {
+    flex-direction: row;
+  }
+
+  /* Start of Hamburger */
+  .menu {
+    display: none;
+    position: absolute;
+    background-color: teal;
+    right: 0;
+    left:  0;
+    text-align: center;
+    padding: 16px 0;
+  }
+
+  .menu a {
+    font-size: 24px;
+  }
+
+  .menu li:hover {
+    display: inline-block;
+    background-color: #4c9e9e;
+    transition:  0.3s ease-in-out;
+  }
+
+  .menu li + li {
+    margin-top: 12px;
+  }
+
+  input[type=checkbox]:checked ~ .menu  { /* using a adjacent selector */
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
   }
 
   .logo-container {
