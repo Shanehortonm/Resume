@@ -1,4 +1,6 @@
-/*window.onload = function getName (){
+let user = "";
+
+window.onload = function getName (){
     let userName = prompt("Hey There! What's your name?");
 
     if (userName == null || userName == '') {
@@ -17,24 +19,30 @@
         userName = 'Guest';
     }
 
+    user = userName;
+
     alert('Thanks for your support ' + userName + '!')
 
     document.getElementById('jsName').innerHTML = userName + "!";
 };
 
-/*const contactName = document.getElementById('contact-name');
-const contactEmail = document.getElementById('contact-email');
-const contactNumber = document.getElementById('contact-number');
-const contactMessage = document.getElementById('contact-message');
-const contactError = document.getElementById('error');
-const contactForm = document.getElementById('contact-form');
+function contactMe() {
+    let email = document.getElementById("contact-email").value;
+    let contactName = document.getElementById("contact-name").value;
 
-form.addEventListener('submit', (e) => {
-    let messages = []
-    if (contactName.value === '' ||  contactName.value === null) {
-        messages.push('Name is required')
-    }
-})*/
+    if (!contactName) {
+        contactName = user;
+    };
+
+    const newLocal = ".";
+    if ( !(email.includes("@") || email.includes(".")) ) {
+        alert("Please enter a valid Email!");
+    } else {
+        alert(`Thank you for your interest, ${contactName}!`)
+    };
+}
+
+
 
 
 let toTopBtn = document.getElementById('top-btn');
