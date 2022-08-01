@@ -44,13 +44,12 @@ function contactMe() {
 
 
 
-
 let toTopBtn = document.getElementById('top-btn');
 
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 40) {
         toTopBtn.style.display = "block";   
     } else {
         toTopBtn.style.display = "none";
